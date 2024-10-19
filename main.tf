@@ -1,12 +1,10 @@
 provider "aws" {
-  region = "us-east-1"  # Set your region
+  region = "us-east-1" 
 }
-
 resource "aws_instance" "one" {
-  ami           = "ami-06b21ccaeff8cd686"  # Example AMI ID, change as per region
+  ami           = "ami-0ddc798b3f1a5117e" 
   instance_type = "t2.micro"
-  
   tags = {
-    Name = "pipeline-server1"
+    Name = "pipeline-server"
   }
 }
